@@ -1,13 +1,3 @@
----
-title: "Japanese Voice Weather Chatbot"
-emoji: "🗾"
-colorFrom: "blue"
-colorTo: "green"
-sdk: "gradio"
-sdk_version: "4.29.0"
-app_file: app.py
-pinned: false
----
 ## 🗾 Japanese Voice Weather Chatbot
 This is a voice-enabled chatbot that listens to Japanese speech, fetches real-time weather data, and generates smart, AI-powered suggestions to enhance the user experience.
 

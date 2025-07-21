@@ -1,0 +1,7 @@
+gradio
+requests
+openai
+git+https://github.com/openai/whisper.git
+python-dotenv
+ibm-watsonx-ai
+dotenv

@@ -4,7 +4,8 @@ This is a voice-enabled chatbot that listens to Japanese speech, fetches real-ti
 ## 🚀 Features
 - 🎙️ Japanese voice input using microphone  
 - ☁️ Real-time weather info using WeatherAPI  
-- 🤖 AI-based suggestions generated via LLM (IBM WatsonX)  
+- 🤖 AI-based suggestions generated via LLM (IBM WatsonX)
+- 🌐 Web-based UI using Gradio
 
 ## ⚙️ Environment Variables
 
@@ -28,14 +29,14 @@ pip install -r requirements.txt
 python app.py
 ```
 
-## 🎯 Example Use Cases (based on weather and AI suggestions)
-🌤️ Travel recommendations: Suggests nearby places to visit based on the weather
-👗 Fashion tips: Recommends clothing appropriate for today’s temperature and rain conditions
-🎵 Mood-based music: Suggests playlists matching the weather (e.g., chill music on rainy days)
-🏃‍♂️ Outdoor activity advice: Recommends safe times or gear for exercise or farming
-🚫 Rain alerts: Warns users to carry an umbrella or delay travel
+## 🎯 Example Use Cases (based on weather and AI suggestions)  
+🌤️ Travel recommendations: Suggests nearby places to visit based on the weather  
+👗 Fashion tips: Recommends clothing appropriate for today’s temperature and rain conditions  
+🎵 Mood-based music: Suggests playlists matching the weather (e.g., chill music on rainy days)  
+🏃‍♂️ Outdoor activity advice: Recommends safe times or gear for exercise or farming  
+🚫 Rain alerts: Warns users to carry an umbrella or delay travel  
 
-# 📝 Notes
-1.Works best with a stable internet connection and a good quality mic.
-2.Outputs AI suggestions based on current weather and location.
-3.All audio and flagged inputs are stored temporarily in .gradio/flagged.
+# 📝 Notes  
+1.Works best with a stable internet connection and a good quality mic.  
+2.Outputs AI suggestions based on current weather and location.  
+3.All audio and flagged inputs are stored temporarily in .gradio/flagged.  

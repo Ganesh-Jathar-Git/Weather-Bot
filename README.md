@@ -2,9 +2,10 @@
 This is a voice-enabled chatbot that listens to Japanese speech, fetches real-time weather data, and generates smart, AI-powered suggestions to enhance the user experience.
 
 ## 🚀 Features
-- 🎙️ Japanese voice input using microphone  
+- 🎙️ Japanese voice input using microphone
+- 🗣️ Real-time speech-to-text transcription using Whisper  
 - ☁️ Real-time weather info using WeatherAPI  
-- 🤖 AI-based suggestions generated via LLM (IBM WatsonX)
+- 🤖 AI-generated suggestions using IBM WatsonX (Llama 3-3-70B)
 - 🌐 Web-based UI using Gradio
 
 ## ⚙️ Environment Variables
@@ -19,12 +20,18 @@ Set the following environment variables:
    - `URL=your_model_endpoint_url`   
 
 ## 🧪 Setup
-1.Install dependencies:   
+1.Create and activate a virtual environment:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+2.Install dependencies:   
 ```bash
 pip install -r requirements.txt
 ```
 
-2.Run the app:
+3.Run the app:
 ```bash
 python app.py
 ```
@@ -37,6 +44,5 @@ python app.py
 🚫 Rain alerts: Warns users to carry an umbrella or delay travel  
 
 # 📝 Notes  
-1.Works best with a stable internet connection and a good quality mic.  
-2.Outputs AI suggestions based on current weather and location.  
-3.All audio and flagged inputs are stored temporarily in .gradio/flagged.  
+1. Works best with a stable internet connection and a good quality mic.  
+2. Outputs AI suggestions based on current weather and location.  

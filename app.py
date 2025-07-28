@@ -4,6 +4,8 @@ from utils.weather import get_weather
 from utils.transcribe import transcribe_audio
 from utils.chat import generate_suggestion
 from utils.chat import extract_city 
+from dotenv import load_dotenv
+load_dotenv()
 
 def process_input(audio):
     # Transcribe audio to Japanese text

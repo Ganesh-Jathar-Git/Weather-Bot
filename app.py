@@ -34,11 +34,11 @@ def process_input(audio):
 
 demo = gr.Interface(
     fn=process_input,
-    inputs = gr.Audio(type="filepath", label="日本語で話してください"),
+    inputs=gr.Audio(source="microphone", type="filepath", label="日本語で話してください"),
     outputs="text",
     title="⛅ AI天気アシスタント",
-    description="🎙️ 日本語で話しかけるだけで、AIがあなたの都市を認識し、現在の天気とスマートなアドバイスをお届けします.",
-    allow_flagging="never" 
+    live=True,
+    description="🎙️ 日本語で話しかけるだけで、AIがあなたの都市を認識し、現在の天気とスマートなアドバイスをお届けします。"
 )
 
 if __name__ == "__main__":
